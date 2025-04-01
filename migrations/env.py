@@ -7,9 +7,7 @@ from pathlib import Path
 # Añade la ruta de tu proyecto al PATH
 sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
 
-from app.core.database import Base
-from app.models.user import User  # Importa todos tus modelos
-from app.models.role import Role
+from app.models import *
 
 # Configuración de Alembic
 config = context.config
