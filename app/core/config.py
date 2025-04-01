@@ -15,7 +15,7 @@ class Settings(BaseSettings):
     EMAIL_PASSWORD: str | None = None
     EMAIL_FROM_NAME: str | None = None
     ENVIRONMENT: str = "development"
-    DEBUG: bool = False
+
 
     class Config:
         env_file = ".env"
